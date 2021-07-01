@@ -15,6 +15,9 @@ imgResize=cv2.resize(img,(300,200))                     # Resize
 print(imgResize.shape)
 imgCrop=img[0:200,200:500]                              # Crop
 
+imghor=np.hstack((img,img))                             # HorizontalStack
+imgver=np.vstack((imghor,imghor))                       # VerticalStack
+
 cv2.imshow("image",img)
 cv2.imshow("Gray",imgGray)
 cv2.imshow("Blur",imgBlur)
@@ -23,5 +26,7 @@ cv2.imshow("dilation",imgDilation)
 cv2.imshow("erosion",imgEroded)
 cv2.imshow("imageresize",imgResize)
 cv2.imshow("imagecrop",imgCrop)
+cv2.imshow('Stacked',imgver)
+
 
 cv2.waitKey(0)
