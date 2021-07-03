@@ -12,3 +12,5 @@
  6: Pick Color HSV -- ColorPicker.py
  
  7: Draw Virtually -- VirtualPaint.py
+ 
+ 8: Aruco Marker tracking -- ArUcoPoseEstimation.py
